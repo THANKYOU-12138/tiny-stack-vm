@@ -29,6 +29,10 @@ baseline (plain-vm) skips the hard rules; this entry implements them all.
 
 ## Bundle dry-run
 
-Recorded at the end of this file's final version: run from the kit directory against this
-repository; the session is discoverable and the remaining gaps are the parent's bundle-time
-declarations (same as mend and sitegen).
+Run from the kit directory (`bundle --repo ~/.makefun/work/stackvm-bot --dry-run`): **the
+build session is discoverable** — 1 Muse app session (this subagent's, a375d186-…; it also
+holds the sitegen build), 61 turns, 206 lines kept, AGENTS.md and the system prompt
+collected. A real bundle is not writable from inside this run; the gaps are the parent's to
+close at bundle time, exactly as with mend: `--mcp` declaration, `--provider`/`--effort`,
+and the muse.db usage rows for agent bff0c90e-… (parent) and a375d186-… (this subagent),
+bundled from the top-level session so the person's prompt is included.
